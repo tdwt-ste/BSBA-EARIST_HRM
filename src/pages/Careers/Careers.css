@@ -91,11 +91,11 @@
   margin-bottom: 0.1rem;
 }
 
-.cc-title {
+.careers-page .cc-title {
   font-family: var(--font-main);
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--white);
+  color: #fff !important;
   margin-bottom: 0.4rem;
 }
 
