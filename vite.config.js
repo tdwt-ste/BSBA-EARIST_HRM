@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/BA-HRM_EARIST/',
+  base: '/BSBA-EARIST_HRM/',
   server: {
     port: 5173,
     open: true,
