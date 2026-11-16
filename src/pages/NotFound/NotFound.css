@@ -1,0 +1,89 @@
+.not-found-page {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background: var(--gray-light);
+}
+
+.nf-container {
+  text-align: center;
+  max-width: 540px;
+}
+
+.nf-code {
+  font-family: var(--font-main);
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(18,59,112,0.08);
+  line-height: 1;
+  margin-bottom: -1rem;
+}
+
+.nf-icon {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nf-title {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.nf-desc {
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.nf-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.nf-links-label {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.nf-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.nf-link {
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1.5px solid var(--gray);
+  border-radius: var(--radius);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--primary);
+  transition: all var(--transition);
+}
+
+.nf-link:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}

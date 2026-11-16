@@ -1,0 +1,252 @@
+.earist-logo-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.earist-page-seal {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-md);
+  background: #fff;
+  padding: 2px;
+}
+
+/* History */
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.history-text p {
+  margin-bottom: 1rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.history-text strong { color: var(--primary); font-weight: 600; }
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 70px 24px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  min-height: 80px;
+}
+
+.timeline-year {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--primary);
+  padding-top: 2px;
+  text-align: right;
+}
+
+.timeline-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: var(--yellow);
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.timeline-connector {
+  flex: 1;
+  width: 2px;
+  background: var(--gray);
+  min-height: 60px;
+  margin-top: 2px;
+}
+
+.timeline-event {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+/* School Background */
+.background-card {
+  display: flex;
+  gap: 2rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--primary);
+  align-items: flex-start;
+}
+
+.background-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--yellow);
+  flex-shrink: 0;
+}
+
+.background-content p {
+  margin-bottom: 1rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+
+.background-content strong { color: var(--primary); font-weight: 600; }
+
+/* VMQ Grid */
+.vmq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.vmq-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--primary);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.vmq-card.vision  { border-top-color: var(--primary); }
+.vmq-card.mission { border-top-color: #1a5276; }
+.vmq-card.philosophy { border-top-color: var(--yellow-dark); }
+.vmq-card.quality { border-top-color: var(--red); }
+
+.vmq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.vmq-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.vmq-title {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.vmq-divider {
+  width: 40px;
+  height: 3px;
+  background: var(--yellow);
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.vmq-text {
+  color: var(--text-mid);
+  font-size: 0.925rem;
+  line-height: 1.75;
+}
+
+/* Core Values */
+.about-earist-page .bg-primary .section-title::after {
+  background: rgba(255,255,255,0.4);
+  margin: 0.5rem auto 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.value-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.value-card:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: var(--yellow);
+  transform: translateY(-4px);
+}
+
+.value-letter {
+  font-family: var(--font-main);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--yellow);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.value-icon {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.value-word {
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+
+.value-desc {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.65;
+}
+
+@media (max-width: 1024px) {
+  .history-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .vmq-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .background-card { flex-direction: column; }
+  .timeline-item { grid-template-columns: 60px 20px 1fr; gap: 0.5rem; }
+}

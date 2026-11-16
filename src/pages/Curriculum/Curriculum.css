@@ -1,0 +1,331 @@
+.curriculum-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.curr-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary);
+}
+
+.curr-stat svg { color: var(--yellow-dark); }
+
+.curr-stat-num {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.curr-stat-label {
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.curr-divider {
+  width: 1px;
+  height: 50px;
+  background: var(--gray);
+}
+
+/* Description grid */
+.curr-desc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.curr-desc-text p {
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.curr-desc-text strong { color: var(--primary); font-weight: 600; }
+
+.year-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.year-summary-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid;
+  transition: all var(--transition);
+}
+
+.year-summary-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.ysc-label {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.ysc-num {
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.ysc-sub {
+  font-size: 0.75rem;
+  color: var(--text-mid);
+  font-family: var(--font-main);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Accordions */
+.curriculum-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.year-accordion {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray);
+}
+
+.year-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.75rem;
+  background: var(--white);
+  cursor: pointer;
+  transition: background var(--transition);
+  border-left: 5px solid var(--year-color, var(--primary));
+}
+
+.year-toggle:hover { background: var(--gray-light); }
+
+.year-toggle-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.year-num-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.year-toggle-label {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--primary);
+  text-align: left;
+}
+
+.year-toggle-sub {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  margin-top: 0.1rem;
+}
+
+.year-toggle-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary);
+}
+
+.year-units-label {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--primary);
+}
+
+.year-content {
+  padding: 1.5rem;
+  border-top: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--gray-light);
+}
+
+/* Semester block */
+.sem-block {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.sem-header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.sem-header svg { opacity: 0.7; }
+
+.sem-total-badge {
+  margin-left: auto;
+  background: var(--yellow);
+  color: var(--primary-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+}
+
+.subj-code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  background: rgba(18,59,112,0.08);
+  color: var(--primary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Grand total */
+.grand-total-bar {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gt-label {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.gt-num {
+  font-family: var(--font-main);
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--yellow);
+}
+
+/* Revision box */
+.revision-box {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  border-left: 5px solid var(--yellow-dark);
+}
+
+.revision-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(244,196,48,0.15);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--yellow-dark);
+  flex-shrink: 0;
+}
+
+.revision-content h3 {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.revision-date {
+  font-size: 0.8rem;
+  color: var(--yellow-dark);
+  font-weight: 600;
+  font-family: var(--font-main);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.revision-content p {
+  color: var(--text-mid);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.revision-content strong { color: var(--primary); font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .curr-desc-grid { grid-template-columns: 1fr; }
+  .year-summary-cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .curriculum-overview { gap: 1.25rem; }
+  .curr-divider { display: none; }
+  .year-summary-cards { grid-template-columns: repeat(2, 1fr); }
+  .revision-box { flex-direction: column; }
+  .grand-total-bar { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .year-toggle { padding: 1.25rem; }
+  .year-toggle-label { font-size: 1rem; }
+  .year-num-badge { width: 36px; height: 36px; font-size: 0.75rem; }
+}
